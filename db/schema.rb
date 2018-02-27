@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180227065836) do
+ActiveRecord::Schema.define(version: 20180227070935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 20180227065836) do
     t.index ["media_id", "media_type"], name: "index_posts_on_media_id_and_media_type", unique: true
     t.index ["media_id"], name: "index_posts_on_media_id"
     t.index ["media_type"], name: "index_posts_on_media_type"
+  end
+
+  create_table "texts", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "body", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["title"], name: "index_texts_on_title"
   end
 
   create_table "users", force: :cascade do |t|
