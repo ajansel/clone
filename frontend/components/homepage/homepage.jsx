@@ -41,18 +41,24 @@ class Homepage extends React.Component {
   }
 
   handleKeyDown(event) {
+    window.removeEventListener('keydown', this.handleKeyDown);
+
     let newPane;
-    if (event.key === "ArrowDown") {
+    if (event.key === "ArrowDown" && this.state.currentPane < 3) {
       newPane = this.state.currentPane + 1;
       this.setState({
         currentPane: newPane
       });
-    } else if (event.key === "ArrowUp") {
+    } else if (event.key === "ArrowUp" && this.state.currentPane > 0) {
       newPane = this.state.currentPane - 1;
       this.setState({
         currentPane: newPane
       });
     }
+
+    // Wait 2 seconds to set another event listener to prevent continued scroll
+    const callback = () => window.addEventListener('keydown', this.handleKeyDown);
+    setTimeout(callback, 2000);
   }
 
   render() {
