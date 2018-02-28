@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PaneContainer from './panes/pane_container';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -62,22 +63,8 @@ class Homepage extends React.Component {
   }
 
   render() {
-    let pane;
-    if (this.state.currentPane === 0) {
-      pane = 0;
-    } else if (this.state.currentPane === 1) {
-      pane = 1;
-    } else if (this.state.currentPane === 2) {
-      pane = 2;
-    } else if (this.state.currentPane === 3) {
-      pane = 3;
-    }
-    console.log(this.state.currentPane);
-    
     return (
-      <div>
-        {pane}
-      </div>
+      <PaneContainer currentPane={this.state.currentPane}/>
     );
   }
 }
