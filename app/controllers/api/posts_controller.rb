@@ -10,7 +10,6 @@ class Api::PostsController < ApplicationController
       # TODO: Change this once followers exist
       @posts = Post.all
     end
-    debugger
     render :index
   end
 
@@ -66,6 +65,7 @@ class Api::PostsController < ApplicationController
     @post = current_user.posts.find_by(id: params[:id])
     if @post
       @post.destory
+      @post.media.destory
       render :show
     else
       render json: ['This is not your post'], status: 401
