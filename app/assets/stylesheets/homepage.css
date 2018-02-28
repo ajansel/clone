@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+}
+
+header > div > img {
+  width: 100px;
+  height: 100px;
+}
+header {
+  display: flex;
+  justify-content: space-between
+}
+
+header > div {
+  display: flex;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pane {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  z-index: -1000;
+}
