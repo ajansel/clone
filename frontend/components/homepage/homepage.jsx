@@ -12,27 +12,23 @@ class Homepage extends React.Component {
   componentDidMount() {
     window.addEventListener('keydown', this.handleKeyDown);
     window.addEventListener('wheel', this.handleScroll);
-    console.log("aa");
   }
 
   componentWillUnmount() {
     window.removeEventListener('keydown', this.handleKeyDown);
-    window.removeEventListener('wheel', this.handleScroll);
-    console.log("bye");
-    
+    window.removeEventListener('wheel', this.handleScroll);    
   }
 
   handleScroll(event) {
     window.removeEventListener('wheel', this.handleScroll);
-    console.log("start");
     
     let newPane;
-    if (event.deltaY < 0) {
+    if (event.deltaY > 0 && this.state.currentPane < 3) {
       newPane = this.state.currentPane + 1;
       this.setState({
         currentPane: newPane
       });
-    } else if (event.deltaY > 0) {
+    } else if (event.deltaY < 0 && this.state.currentPane > 0) {
       newPane = this.state.currentPane - 1;
       this.setState({
         currentPane: newPane
@@ -46,7 +42,6 @@ class Homepage extends React.Component {
 
   handleKeyDown(event) {
     let newPane;
-    console.log(event);
     if (event.key === "ArrowDown") {
       newPane = this.state.currentPane + 1;
       this.setState({
@@ -61,9 +56,21 @@ class Homepage extends React.Component {
   }
 
   render() {
+    let pane;
+    if (this.state.currentPane === 0) {
+      pane = 0;
+    } else if (this.state.currentPane === 1) {
+      pane = 1;
+    } else if (this.state.currentPane === 2) {
+      pane = 2;
+    } else if (this.state.currentPane === 3) {
+      pane = 3;
+    }
+    console.log(this.state.currentPane);
+    
     return (
       <div>
-        {this.state.currentPane}
+        {pane}
       </div>
     );
   }
