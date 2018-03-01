@@ -9,6 +9,7 @@ class Homepage extends React.Component {
     this.state = { currentPane: 0 };
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -57,11 +58,15 @@ class Homepage extends React.Component {
     }
   }
 
-  render() {
+  handleClick(buttonNum) {
+    this.setState({currentPane: buttonNum});
+  }
+
+  render() {    
     return (
       <div>
         <PaneContainer currentPane={this.state.currentPane}/>
-        <ButtonsContainer currentPane={this.state.currentPane}/>
+        <ButtonsContainer handleClick={this.handleClick} currentPane={this.state.currentPane}/>
       </div>
     );
   }
