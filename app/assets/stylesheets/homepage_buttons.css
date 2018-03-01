@@ -1,0 +1,41 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  position: fixed;
+  top: calc(50vh - 80px);
+  left: 40px;
+}
+
+.fa-circle {
+  color: rgba(211, 211, 211, .4);
+}
+
+.selected {
+  color: rgba(255, 255, 255, 1)
+}
+
+.zero div:nth-child(1) svg {
+  color: rgba(255, 255, 255, 1)
+}
+
+.one div:nth-child(2) svg {
+  color: rgba(255, 255, 255, 1)
+}
+
+.two div:nth-child(3) svg {
+  color: rgba(255, 255, 255, 1)
+}
+
+.three div:nth-child(4) svg {
+  color: rgba(255, 255, 255, 1)
+}
+
+.four div:nth-child(5) svg {
+  color: rgba(255, 255, 255, 1)
+}
+
+.five div:nth-child(6) svg {
+  color: rgba(255, 255, 255, 1)
+}
