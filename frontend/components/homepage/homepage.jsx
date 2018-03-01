@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PaneContainer from './panes/pane_container';
+import ButtonsContainer from './buttons/buttons_container';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -64,7 +65,10 @@ class Homepage extends React.Component {
 
   render() {
     return (
-      <PaneContainer currentPane={this.state.currentPane}/>
+      <div>
+        <PaneContainer currentPane={this.state.currentPane}/>
+        <ButtonsContainer currentPane={this.state.currentPane}/>
+      </div>
     );
   }
 }
