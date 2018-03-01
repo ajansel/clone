@@ -19,7 +19,13 @@ class Pane extends React.Component {
       color = 'green';
     } else if (this.props.currentPane === 3) {
       pane = 3;
-      color = 'yellow';
+      color = 'purple';
+    } else if (this.props.currentPane === 4) {
+      pane = 4;
+      color = 'black';
+    } else if (this.props.currentPane === 5) {
+      pane = 5;
+      color = 'navy';
     }
 
     return (

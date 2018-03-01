@@ -27,8 +27,16 @@ header > div {
   background-color: red;
 }
 
-.yellow {
-  background-color: yellow;
+.purple {
+  background-color: purple;
+}
+
+.black {
+  background-color: black;
+}
+
+.navy {
+  background-color: navy;
 }
 
 .pane {

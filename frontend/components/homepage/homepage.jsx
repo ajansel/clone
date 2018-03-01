@@ -25,7 +25,7 @@ class Homepage extends React.Component {
     window.removeEventListener('wheel', this.handleScroll);
     
     let newPane;
-    if (event.deltaY > 0 && this.state.currentPane < 3) {
+    if (event.deltaY > 0 && this.state.currentPane < 5) {
       newPane = this.state.currentPane + 1;
       this.setState({
         currentPane: newPane
@@ -44,7 +44,7 @@ class Homepage extends React.Component {
 
   handleKeyDown(event) {
     let newPane;
-    if (event.key === "ArrowDown" && this.state.currentPane < 3) {
+    if (event.key === "ArrowDown" && this.state.currentPane < 5) {
       newPane = this.state.currentPane + 1;
       this.setState({
         currentPane: newPane
