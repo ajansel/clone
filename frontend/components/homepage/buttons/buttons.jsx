@@ -24,12 +24,12 @@ class Buttons extends React.Component {
     
     return (
       <div className={`buttons ${pane}`}>
-        <div onClick={() => this.props.handleClick(0)}><i class="far fa-circle"></i></div>
-        <div onClick={() => this.props.handleClick(1)}><i class="far fa-circle"></i></div>
-        <div onClick={() => this.props.handleClick(2)}><i class="far fa-circle"></i></div>
-        <div onClick={() => this.props.handleClick(3)}><i class="far fa-circle"></i></div>
-        <div onClick={() => this.props.handleClick(4)}><i class="far fa-circle"></i></div>
-        <div onClick={() => this.props.handleClick(5)}><i class="far fa-circle"></i></div>
+        <div onClick={() => this.props.handleClick(0)}></div>
+        <div onClick={() => this.props.handleClick(1)}></div>
+        <div onClick={() => this.props.handleClick(2)}></div>
+        <div onClick={() => this.props.handleClick(3)}></div>
+        <div onClick={() => this.props.handleClick(4)}></div>
+        <div onClick={() => this.props.handleClick(5)}></div>
       </div>
     );
   }

@@ -8,34 +8,51 @@
   left: 40px;
 }
 
-.fa-circle {
-  color: rgba(211, 211, 211, .4);
+.buttons > div{
+  border: 3px solid rgba(211, 211, 211, .6);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
-.selected {
-  color: rgba(255, 255, 255, 1)
+.zero div:nth-child(1) {
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
-.zero div:nth-child(1) svg {
-  color: rgba(255, 255, 255, 1)
+.one div:nth-child(2) {
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
-.one div:nth-child(2) svg {
-  color: rgba(255, 255, 255, 1)
+.two div:nth-child(3) {
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
-.two div:nth-child(3) svg {
-  color: rgba(255, 255, 255, 1)
+.three div:nth-child(4) {
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
-.three div:nth-child(4) svg {
-  color: rgba(255, 255, 255, 1)
+.four div:nth-child(5) {
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
-.four div:nth-child(5) svg {
-  color: rgba(255, 255, 255, 1)
-}
-
-.five div:nth-child(6) svg {
-  color: rgba(255, 255, 255, 1)
+.five div:nth-child(6) {
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
