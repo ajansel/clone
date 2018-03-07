@@ -4,7 +4,7 @@ import NavbarContainer from './navbar/navbar_container';
 import { Route, Switch } from 'react-router-dom';
 
 const App = () => (
-  <div>
+  <div className="main-container">
     <NavbarContainer />
     <Switch>
       <Route path="/" component={HomepageContainer} />
