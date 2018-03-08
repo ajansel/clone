@@ -1,14 +1,36 @@
-.session-form {
+.session-intro {
   width: 300px;
   height: 300px;
   position: fixed;
-  top: calc(50vh - 150px);
+  top: calc(38vh - 150px);
   left: calc(50vw - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.session-form > h1 {
+.session-intro > h1 {
   font-family: 'Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif';
   font-weight: bold;
   font-size: 64px;
   text-align: center;
+  margin: 0;
+  line-height: 50px;
+}
+
+.session-intro > h2 {
+  margin: 10px 0 16px 0;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.session-intro button {
+  margin-top: 12px;
+  height: 45px;
+  border-radius: 2px;
+  font-family: 'Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif';
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0px;
 }

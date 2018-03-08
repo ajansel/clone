@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SessionFormContainer from '../session_form/session_form_container';
+import SessionIntroContainer from '../session_form/session_intro_container';
 
 class Pane extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class Pane extends React.Component {
     if (this.props.currentPane === 0) {
       pane = 0;
       color = 'first';
-      container = <SessionFormContainer />;
+      container = <SessionIntroContainer />;
     } else if (this.props.currentPane === 1) {
       pane = 1;
       color = 'second';
