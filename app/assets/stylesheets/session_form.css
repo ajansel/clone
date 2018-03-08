@@ -1,0 +1,14 @@
+.session-form {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 150px);
+}
+
+.session-form > h1 {
+  font-family: 'Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif';
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+}
